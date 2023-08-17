@@ -27,8 +27,3 @@ class Polynomial:
     def __str__(self):
         return ' + '.join([f'({str(coefficient)})x^{i}' for i, coefficient in
                         enumerate(self.coefficients)])
-    
-import numpy as np
-p = Polynomial([1,2,1])
-print(str(p))
-print(p(np.array([0,1,2,3])))
