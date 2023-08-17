@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Plot Page</title>
+        <link rel="stylesheet" href="{{url_for('static', path='/style.css')}}">
+    </head>
+    <body>
+        <h3>
+            Polynomial Equation: ({{ poly_string }})
+        </h3>
+        <img src="data:img/png;base64, {{picture}}" alt="plot">
+    </body>
+</html>
