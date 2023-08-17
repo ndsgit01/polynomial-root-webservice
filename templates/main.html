@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <link rel="stylesheet" href="{{url_for('static', path='/style.css')}}">
+    </head>
+    <body>
+        <h3>Enter space separated sequence of <u>integer/float</u> coefficients for Polynomial defined as P(x) = a<sub>0</sub>x<sup>0</sup> + a<sub>1</sub>x<sup>1</sup> + ... + a<sub>n-1</sub>x<sup>n-1</sup> + a<sub>n</sub>x<sup>n</sup></h3>
+        <form action="/plot" method="post">
+            coefficients = <input type="text" size=52 name="coefficients">
+            <br>
+            <br>
+            left bound of plot = <input type="text" size=4 name="left_bound">
+	    right bound of plot = <input type="text" size=4 name="right_bound">
+            <button type="submit">Plot</button>
+        </form>
+    </body>
+</html>
